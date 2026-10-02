@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rob's Git deployment</title>
+    <style>
+        body {
+            background: #101827;
+            color: #e5e7eb;
+            font-family: system-ui, sans-serif;
+            max-width: 760px;
+            margin: 100px auto;
+            padding: 24px;
+        }
+        h1 { color: #38bdf8; }
+        .card {
+            background: #1f2937;
+            padding: 32px;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Deployed from Git 🚀</h1>
+        <p>GitHub → Jenkins → EC2 → Nginx</p>
+        <p>Build: __BUILD_NUMBER__</p>
+        <p>Git commit: __GIT_COMMIT__</p>
+        <p>Deployment marker: jenkins-build-__BUILD_NUMBER__</p>
+    </div>
+</body>
+</html>
